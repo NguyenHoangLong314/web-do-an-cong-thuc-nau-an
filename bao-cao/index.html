@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Báo cáo (Report)</title>
+</head>
+<body>
+    <div class="report-form-container">
+        <h1>REPORT</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="user-report">Tố cáo người dùng</label>
+                <input type="text" id="user-report" name="user-report" placeholder="Nhập tên người dùng hoặc ID">
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Lý do tố cáo</label>
+                <div class="select-wrapper">
+                    <select id="reason" name="reason">
+                        <option value="" disabled selected>Chọn lý do</option>
+                        <option value="spam">Spam hoặc quảng cáo</option>
+                        <option value="hate">Ngôn từ kích động thù địch</option>
+                        <option value="abuse">Bắt nạt hoặc quấy rối</option>
+                        <option value="copyright">Vi phạm bản quyền</option>
+                        <option value="other">Lý do khác (Vui lòng ghi rõ)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email liên hệ của bạn</label>
+                <input type="email" id="email" name="email" placeholder="abc@example.com">
+            </div>
+
+            <button type="submit" class="btn-submit">GỬI</button>
+        </form>
+    </div>
+</body>
+</html>

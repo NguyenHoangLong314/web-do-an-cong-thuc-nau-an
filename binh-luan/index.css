@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+   height: 100%;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background: #ffa500;
+  text-align: center;
+  padding: 15px;
+  border-bottom: 3px solid #0077cc;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+/* Main background */
+main {
+   height: calc(100vh - 150px);
+  background: url("img/background.png") center/cover no-repeat;
+}
+
+/* Footer comment box */
+footer {
+  background: #ffa500;
+  padding: 20px 30px;
+}
+
+.comment-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Input */
+.comment-box input {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: #f5dede;
+}

@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f59e0b; /* màu cam */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Comic Sans MS", cursive;
+  margin-bottom: 30px;
+}
+
+.chef-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* khoảng cách giữa chữ và hình */
+}
+
+.chef-image img {
+  width: 120px;
+  height: auto;
+  right: 50px;
+}
+
+.login-box {
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.avatar {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 250px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #eee;
+}
+
+.login-btn {
+  background-color: #fff;
+  color: #f59e0b;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #fcd34d;
+  color: #000;
+}

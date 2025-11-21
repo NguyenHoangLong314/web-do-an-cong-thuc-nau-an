@@ -1,0 +1,106 @@
+/* Thiết lập Font chữ và màu sắc cơ bản */
+:root {
+    --primary-green: #10B981; /* Xanh lá chính */
+    --light-bg: #F3F4F6; /* Nền nhẹ */
+    --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-bg);
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    min-height: 100vh; /* Chiều cao tối thiểu bằng viewport */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Card Thông Báo */
+.success-card {
+    max-width: 380px;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    border-top: 8px solid var(--primary-green);
+    
+    /* Animation: Hiển thị mượt mà */
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Biểu tượng */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    color: var(--primary-green);
+    
+    /* Animation: Hiệu ứng bounce nhẹ */
+    animation: bounce 0.6s ease-in-out infinite alternate;
+}
+
+/* Tiêu đề */
+.card-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1F2937;
+    margin-bottom: 15px;
+}
+
+/* Thông điệp */
+.card-message {
+    color: #6B7280;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Nút hành động */
+.action-button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: var(--primary-green);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.action-button:hover {
+    background-color: #059669; /* Xanh đậm hơn khi hover */
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.4);
+}
+
+.action-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.5);
+}
+
+/* Footer nhỏ */
+.card-footer {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #9CA3AF;
+}
+
+/* Keyframes cho Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}

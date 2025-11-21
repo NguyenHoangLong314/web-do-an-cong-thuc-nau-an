@@ -1,0 +1,113 @@
+   body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:orange; /* Nền trắng xám nhẹ */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .report-form-container {
+            width: 100%;
+            max-width: 450px;
+            background-color: orange;
+            padding: 30px;
+            border-radius: 12px; /* Bo tròn mềm mại hơn */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ nhàng */
+            text-align: center;
+            display: flex;
+            align-items: center;      /* Căn giữa theo chiều dọc */
+            justify-content: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 3px solid #007bff; /* Gạch chân xanh dương */
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+            font-size: 1em;
+        }
+
+        /* Định dạng chung cho Input và Select */
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px; /* Bo tròn lớn hơn */
+            font-size: 16px;
+            box-sizing: border-box;
+            background-color: #fff;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            appearance: none; /* Bỏ giao diện select mặc định */
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+            outline: none;
+        }
+        
+        /* Thay thế dấu mũi tên bằng Select tùy chỉnh */
+        .select-wrapper {
+            position: relative;
+        }
+
+        .select-wrapper::after {
+            content: '▼'; /* Dấu mũi tên đơn giản */
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            pointer-events: none; /* Đảm bảo có thể click vào select */
+            color: #777;
+            font-size: 0.8em;
+        }
+
+
+        /* Nút Gửi */
+        .btn-submit {
+            background-color: rgb(90, 60, 4); /* Màu xanh lá cây cho nút Gửi */
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+            margin-top: 10px;
+        }
+    .sidebar-item {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    height: 100px; /* Chiều cao cố định */
+    box-sizing: border-box;
+    
+    /* Căn giữa nội dung */
+    display: flex;
+    align-items: center;      /* Căn giữa dọc */
+    justify-content: center;  /* Căn giữa ngang */
+}
